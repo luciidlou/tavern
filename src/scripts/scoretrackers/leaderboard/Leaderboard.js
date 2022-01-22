@@ -52,7 +52,7 @@ const render = (teamArray, teamScoreArray) => {
                 ${
                     teamArray.map(team => {
                         team.cumulativeScore = team.scores
-                            .reduce((c, n) => c + n.score, 0)
+                            .reduce((c, n) => c + n.team_score, 0)
                         return team
                     })
                     .sort((c, n) => n.cumulativeScore - c.cumulativeScore)

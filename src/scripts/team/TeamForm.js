@@ -10,7 +10,7 @@ componentContainer.on("submit", submitEvent => {
 
         if (moniker.value !== "") {
             addTeam({
-                moniker: moniker.value
+                name: moniker.value
             })
                 .then(() => {
                     moniker.value = ""
